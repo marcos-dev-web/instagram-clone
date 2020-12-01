@@ -1,0 +1,57 @@
+.msg-send {
+  width: calc(100%);
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.msg-send p {
+  max-width: 200px;
+  min-width: 200px;
+  border-radius: 10px;
+  padding: 5px;
+  background: #d1d2d3;
+  transition: all .2s linear;
+}
+
+.msg-send p:hover {
+  background-color: #e0e5eb;
+  cursor: pointer;
+}
+
+.msg-send.i p {
+  margin-left: calc(100% - 210px);
+  border-bottom-right-radius: 0;
+}
+
+.msg-send.he p {
+  border-top-left-radius: 0;
+  margin-left: 10px;
+}
+
+/* 
+.msg-all {
+  min-width: 20px;
+  padding: 5px;
+  background-color: rgb(232, 248, 255);
+  max-width: 200px;
+  border: 1px solid gray;
+}
+
+.msg-all.friend {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  border-radius: 7px;
+  border-top-left-radius: 0;
+}
+
+.msg-all.i {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border-radius: 7px;
+  border-top-right-radius: 0;
+} */
