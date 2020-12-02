@@ -50,6 +50,11 @@ body {
   position: relative;
 }
 
+select {
+  position: absolute;
+  width: 200px;
+}
+
 .ball-big {
   position: absolute;
   width: 18px;
@@ -77,17 +82,14 @@ span.state {
   font-size: 12px;
   color: gray;
 }
+.fa-address-book {
+  color: #1b88d1;
+  transition: all .2s linear;
+  cursor: pointer;
+}
 
-.settings {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: transparent;
-  border: 2px solid black;
-  display: grid;
-  place-items: center;
-  font-family: serif;
-  font-weight: 600;
+.fa-address-book:hover {
+  color: #2fa0eb;
 }
 
 span.search {
