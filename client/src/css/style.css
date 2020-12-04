@@ -1,7 +1,7 @@
 .container-body {
   min-width: 500px;
   width: 90%;
-  height: 99%;
+  height: 90%;
   border-radius: 10px;
   background: rgba(229, 235, 238, .5);
   box-shadow: 0 0 8px 2px rgba(0,0,0,.23);
@@ -14,7 +14,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 @media (max-width: 900px) {
   .container-body {
