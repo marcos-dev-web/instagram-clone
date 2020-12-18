@@ -10,6 +10,8 @@ const cons = require("consolidate");
 const routers = require("./routes");
 const { simple, protect } = require("./middelwares");
 
+const db_connect = require('./database/db');
+
 const app = express();
 
 app.engine("html", cons.swig);

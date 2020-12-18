@@ -27,7 +27,7 @@ const selectUser = (user) => {
 
     p.innerHTML += "<br/>"
     p.appendChild(span_2)
-
+    
   }
 
   userview.innerHTML = ''
@@ -36,6 +36,7 @@ const selectUser = (user) => {
   if (actualUser != user.name) {
     viewmessages.innerHTML = ''
     actualUser = user.name
+    renderMessages(trat(actualUser))
   }
 }
 
@@ -83,13 +84,12 @@ const rederUsers = (users) => {
       if (!actualUser) {
         actualUser = user.name
       }
-      console.log(user.name)
       selectUser(user)
     })
   })
 }
 
-fetch("http://localhost:3010/users", {
+fetch("http://localhost:3000/users", {
   method: "POST",
   cache: "no-cache",
   credentials: "same-origin",
