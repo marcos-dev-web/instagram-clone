@@ -13,16 +13,16 @@ const sendMessages = () => {
       div.classList.add("msg-send");
       div.classList.add("i");
       div.appendChild(p);
-  
+
       save_conversasions();
-      
+
       input.value = "";
       view.appendChild(div);
       let heightScroll = view.scrollHeight;
       view.scroll(0, heightScroll);
-    } 
+    }
   });
-  
+
   //send message by enter in the keyboard
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && input.value.length >= 1) {
@@ -32,9 +32,9 @@ const sendMessages = () => {
       div.classList.add("msg-send");
       div.classList.add("i");
       div.appendChild(p);
-  
+
       save_conversasions();
-      
+
       input.value = "";
       view.appendChild(div);
       let heightScroll = view.scrollHeight;

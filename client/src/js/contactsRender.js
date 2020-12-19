@@ -22,12 +22,12 @@ const selectUser = (user) => {
     let span_2 = document.createElement('span')
     span_2.classList.add('state')
     span_2.innerText = 'Active now';
-    
+
     profile.appendChild(span_1)
 
     p.innerHTML += "<br/>"
     p.appendChild(span_2)
-    
+
   }
 
   userview.innerHTML = ''
@@ -37,6 +37,8 @@ const selectUser = (user) => {
     viewmessages.innerHTML = ''
     actualUser = user.name
     renderMessages(trat(actualUser))
+  } else {
+    renderMessages(trat(user.name))
   }
 }
 
@@ -51,7 +53,7 @@ const rederUsers = (users) => {
     let img = document.createElement('img');
     let span_1 = document.createElement('span');
     let p = document.createElement('p');
-    
+
 
     contact.classList.add('contact');
     user_profile.classList.add('user-profile')
@@ -61,7 +63,7 @@ const rederUsers = (users) => {
     img.src = user.photo_user;
 
     profile.appendChild(img)
-  
+
     p.innerText = user.name
     if (user.state === true) {
       let state = document.createElement('span');
