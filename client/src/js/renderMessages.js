@@ -17,15 +17,11 @@ const renderMessages = (user_name) => {
 
   function renderMessage(message) {
     for (let msg of message) {
-      if (msg.length > 1) {
-        msg.map((MSG) => renderize(MSG))
-      } else {
-        renderize(msg)
-      }
+      renderize(msg)
     }
   }
 
-  if (messages_saved[user_name] ) {
+  if (messages_saved[user_name]) {
     console.log(messages_saved[user_name])
     renderMessage(messages_saved[user_name]);
   }
