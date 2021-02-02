@@ -1,19 +1,26 @@
-# instagram-clone
-this is a simple instagram clone
+# Instagram clone
 
+* a simple "instagram clone"
+* back-end with nodejs
+* database mongodb
+* all messages has saved
+* front-end with html/css & JavaScript
 
-## to run
+## To run
+* 1- clone this repository
+* 2- go to directory
+* 3- enter in the folder server
+* 4- type
+```javascript
+  yarn start
 ```
-	run first the server
-		cd instagram-clone/server && yanr start
-	after
-
-	run client
-		cd instagram-clone/client && lite-server
-
-	if not have lite-server
-		install
-			npm install -g lite-server
-		or if you want run only one time
-			cd instagram-clone/client && npx lite-server
+* 5- enter in the folder client
+* 6- run this folder with lite-server (if case you not have this)
+  ```javascript
+  sudo yarn global add lite-server
+  ```
+* to run 
+```javascript
+cd instagram-clone/client && lite-server
 ```
+* **Done**

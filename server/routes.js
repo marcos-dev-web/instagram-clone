@@ -31,8 +31,7 @@ router.post('/save_message', async (req, res) => {
 
   await Messages.deleteMany({})
 
-  let table = new Messages({
-    messages: JSON.stringify(messages),
+  let table = new Messages({ messages: JSON.stringify(messages),
   })
   await table.save()
     .then(() => {
@@ -47,7 +46,7 @@ router.post('/save_message', async (req, res) => {
 router.post('/messagesGet', async (req, res) => {
 
   let RESULT = await Messages.find({})
-  let messages = RESULT[0].messages;
+  let messages = RESULT[0] ? RESULT[0].messages : '';
 
   res.send(messages)
 })
